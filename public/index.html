@@ -1,89 +1,203 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sai Aditya Gorrepati - Resume</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+h2 {
+    background: #2c3e50;
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+}
+p, li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.section {
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+}
+.contact p {
+    margin: 4px 0;
+}
+.footer {
+    text-align: right;
+    margin-top: 30px;
+}
+</style>
+</head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.7.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.7.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.7.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<body>
+<div class="container">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<h1>SAI ADITYA GORREPATI</h1>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<div class="section contact">
+<p><b>Email:</b> adi20adi05@gmail.com</p>
+<p><b>LinkedIn:</b> www.linkedin.com/in/gorrepati-sai-aditya-191265277</p>
+<p><b>GitHub:</b> github.com/saiaditya200</p>
+<p><b>Phone:</b> +91-9963504646</p>
+</div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<div class="section">
+<h2>Objective</h2>
+<p>
+To be a part of a globally renowned organization where I can expand my technical expertise,
+collaborate on innovative projects, and contribute to organizational and professional goals.
+</p>
+</div>
+
+<div class="section">
+<h2>Educational Qualifications</h2>
+<table>
+<tr>
+<th>Course</th><th>Institute</th><th>Duration</th><th>Aggregate</th>
+</tr>
+<tr>
+<td>B.Tech</td>
+<td>VNR Vignana Jyothi Institute of Engineering and Technology</td>
+<td>2023 – 2027</td>
+<td>7.80 CGPA</td>
+</tr>
+<tr>
+<td>Intermediate</td>
+<td>Sri Chaitanya Junior College</td>
+<td>2021 – 2023</td>
+<td>94.1%</td>
+</tr>
+<tr>
+<td>SSC</td>
+<td>Narayana High School</td>
+<td>2021</td>
+<td>10 CGPA</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Technical Skills</h2>
+<p><b>Programming:</b> C, C++, Python, Java</p>
+<p><b>Web:</b> HTML, CSS, JavaScript, Bootstrap, NodeJS, ReactJS</p>
+<p><b>Databases:</b> SQL Server, MySQL</p>
+<p><b>Tools:</b> GitHub, Power BI, Canva, VS Code, RStudio, Google Colab</p>
+</div>
+
+<div class="section">
+<h2>Projects</h2>
+<ul>
+<li><b>MERN Stack Blogging Platform (In Progress):</b> Blog site with user, author, and admin roles for content creation, reviews, and moderation.</li>
+<li><b>Win Prediction in Cricket:</b> Python ML model using Pandas, NumPy, Scikit-learn with pitch and weather data.</li>
+<li><b>Smartphone Sales Analysis:</b> Excel dashboards for market trends and marketing insights.</li>
+<li><b>E-Commerce Customer Behavior Analysis:</b> Power BI dashboards to improve marketing and engagement.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Achievements</h2>
+<ul>
+<li>Presented paper "Probability in Sports - Cricket" at ICAMADA-2024 International Conference.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Co-Curricular Activities</h2>
+<ul>
+<li>Flutter Workshop – Mobile App Development (Convergence 2023R)</li>
+<li>TechnoVista – Cyber Security Event (2024)</li>
+<li>Blog-A-Thon (2023R)</li>
+<li>WEB-DEV-101 (2025R)</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Extra-Curricular Activities</h2>
+<ul>
+<li>Active member of ACM VNR VJIET</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Certifications</h2>
+<ul>
+<li>Python Essentials 1 – Cisco</li>
+<li>Python Essentials 2 – Cisco</li>
+<li>JavaScript Essentials 1 – Cisco</li>
+<li>JavaScript Essentials 2 – Cisco</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Strengths & Hobbies</h2>
+<table>
+<tr>
+<th>Strengths</th>
+<td>Critical Thinking</td>
+<td>Quick Learning</td>
+<td>Problem Solving</td>
+<td>Creative Skills</td>
+<td>Drawing</td>
+<td>Communication</td>
+</tr>
+<tr>
+<th>Hobbies</th>
+<td>Reading</td>
+<td>Badminton</td>
+<td>Music</td>
+<td>Yoga</td>
+<td>Leadership</td>
+<td>Event Management</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Personal Details</h2>
+<p><b>Date of Birth:</b> 13-08-2005</p>
+<p><b>Languages:</b> English, Hindi, Telugu</p>
+<p><b>Gender:</b> Male</p>
+<p><b>Father’s Name:</b> G. Kiran Prasad</p>
+<p><b>Nationality:</b> Indian</p>
+<p><b>Address:</b> HIG 565 & 566, Raaga Mansion, Flat No 301, Kukatpally, Hyderabad – 500085</p>
+</div>
+
+<div class="section">
+<h2>Declaration</h2>
+<p>
+I hereby declare that the above information is true to the best of my knowledge.
+</p>
+<p><b>Place:</b> Hyderabad &nbsp;&nbsp; <b>Date:</b> 28-11-2024</p>
+</div>
+
+<div class="footer">
+<p><b>(SAI ADITYA GORREPATI)</b></p>
+</div>
+
+</div>
+</body>
 </html>
